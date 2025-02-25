@@ -8,7 +8,7 @@ resource "aws_internet_gateway" "gw" {
     Organization = var.organization
     Product      = "${var.product} - IG"
     Division     = var.division
-    Name         = "Eccomerce main-ig ${local.env}"
+    Name         = "bluebird main-ig ${local.env}"
     Environment  = local.env
   }
 }
@@ -29,7 +29,7 @@ resource "aws_route_table" "public" {
     Organization = var.organization
     Product      = "${var.product} - public RT"
     Division     = var.division
-    Name         = "eccomerce public-rt ${local.env}"
+    Name         = "bluebird public-rt ${local.env}"
     Environment  = local.env
   }
 }

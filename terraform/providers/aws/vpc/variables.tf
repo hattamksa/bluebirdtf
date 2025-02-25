@@ -7,7 +7,7 @@ variable "organization" {
 variable "product" {
   type        = string
   description = "Product name"
-  default     = "eccomerce"
+  default     = "bluebird"
 }
 
 variable "division" {

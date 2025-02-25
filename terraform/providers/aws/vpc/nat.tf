@@ -31,16 +31,13 @@ resource "aws_route_table" "private" {
     cidr_block     = "0.0.0.0/0"
     nat_gateway_id = aws_nat_gateway.nat_gw[count.index].id
   }
-  # route {
-  #   cidr_block = "10.0.0.0/16"
-  #   vpc_peering_connection_id  = "pcx-0f9ee1712478cb043"
-  # } 
+
 
   tags = {
     Organization = var.organization
     Product      = "${var.product} - private RT"
     Division     = var.division
-    Name         = "eccomerce private-rt ${local.env}"
+    Name         = "bluebird private-rt ${local.env}"
     Environment  = local.env
   }
 }

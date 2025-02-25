@@ -6,7 +6,7 @@ resource "aws_vpc" "main" {
     Organization = var.organization
     Product      = "${var.product} - VPC"
     Division     = var.division
-    Name         = "learning main-vpc ${local.env}"
+    Name         = "bluebird main-vpc ${local.env}"
     Environment  = local.env
   }
 } 

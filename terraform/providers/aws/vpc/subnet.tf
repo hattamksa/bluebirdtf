@@ -8,7 +8,7 @@ resource "aws_subnet" "public" {
     Organization = var.organization
     Product      = "${var.product} - Subnet EKS public"
     Division     = var.division
-    Name         = "learning Public Subnet EKS ${local.env} ${count.index + 1}"
+    Name         = "bluebird Public Subnet EKS ${local.env} ${count.index + 1}"
     Environment  = local.env
   }
 
@@ -25,7 +25,7 @@ resource "aws_subnet" "private" {
     Organization = var.organization
     Product      = "${var.product} - Subnet EKS private"
     Division     = var.division
-    Name         = "learning Private Subnet EKS ${local.env} ${count.index + 1}"
+    Name         = "bluebird Private Subnet EKS ${local.env} ${count.index + 1}"
     Environment  = local.env
 
     // Needed for istio internal gateway
