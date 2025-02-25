@@ -1,0 +1,4 @@
+.aws_env
+.terraform/
+last
+.DS_Store
